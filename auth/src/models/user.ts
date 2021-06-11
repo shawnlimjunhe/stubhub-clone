@@ -49,7 +49,7 @@ userSchema.pre('save', async function (done) {
   done();
 });
 
-// adding a function to a model
+// adding a function to a model, for typescript
 userSchema.statics.build = (attrs: UserAttrs) => {
   return new User(attrs);
 };
